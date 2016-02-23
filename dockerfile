@@ -18,3 +18,10 @@ ENV PATH /cufflinks-2.2.1.Linux_x86_64/:$PATH
 
 # Entrypoint
 ENTRYPOINT ["/usr/bin/cufflinks-2.2.1.pl"]
+
+# Build dockerimage from dockerfile
+# sudo docker build -t"=ubuntu/cufflinks-2.2.1" .
+#
+# cd to sample_files directory and then do test run
+# sudo docker run --rm -v $(pwd):/home/upendra_35/cufflinks-2.2.1/sample_files -w /home/upendra_35/cufflinks-2.2.1/sample_files ubuntu/cufflinks-2.2.1:latest --infile SRR070570_WT.fastq.tophat.bam --M transcripts.gtf
+
