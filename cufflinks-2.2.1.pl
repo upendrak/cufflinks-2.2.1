@@ -4,7 +4,7 @@ use warnings;
 use Getopt::Long qw(:config no_ignore_case no_auto_abbrev pass_through);
 
 #use constant CUFFLINKS  => 'cufflinks-2.0.0.Linux_x86_64/cufflinks';
-use constant CUFFLINKS  => '/home/upendra_35/cufflinks-2.2.1/cufflinks-2.2.1.Linux_x86_64/cufflinks';
+use constant CUFFLINKS  => '/cufflinks-2.2.1.Linux_x86_64/cufflinks';
 
 # Define worflow options
 my ($query_file, $query_dir, $annotation, $user_annotation);
