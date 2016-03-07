@@ -76,7 +76,7 @@ if ($bias_fasta) {
     $cmd .= " -b $bias_fasta";
 }
 
-my $gtf_out = 'gtf';
+#my $gtf_out = 'gtf';
 for my $query_file (@queries) {    
     my $basename = $query_file;
     $basename =~ s/^\S+\/|\.\S+$//g;
@@ -88,8 +88,8 @@ for my $query_file (@queries) {
     $success++ if -e "cufflinks_out/transcripts.gtf" && ! -z "cufflinks_out/transcripts.gtf";
     system("mv cufflinks_out $basename\_out");
 
-    mkdir $gtf_out unless -d $gtf_out;
-    system("cp $basename\_out/transcripts.gtf $gtf_out/$basename\_transcripts.gtf");
+    #mkdir $gtf_out unless -d $gtf_out;
+    #system("cp $basename\_out/transcripts.gtf $gtf_out/$basename\_transcripts.gtf");
 }
 
 system "rm -f *.fai";
